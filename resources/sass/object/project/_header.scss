@@ -1,0 +1,84 @@
+.p-header__wrapper {
+    line-height: 90px;
+    @include mq($breakpoint: md){
+        line-height: 60px;
+    }
+    .p-header__logo {
+        font-size: 32px;
+        @include mq($breakpoint: md){
+            font-size: 28px;
+        }
+    }
+    .p-header__menuList {
+        @include mq($breakpoint: md){
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            right: -100%;
+            background: rgba(255, 255, 255, 0.85);
+            padding-top: 80px;
+            transition: .5s;
+            &.active {
+              transition: .5s;
+              transform: translate(-100%);
+              z-index: 2;
+            }
+        }
+        .p-header__menuItem {
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 20px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            @include mq($breakpoint: md){
+                display: block;
+                text-align: center;
+                margin-bottom: 30px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.p-header__menuTrigger {
+    display: none;
+    @include mq($breakpoint: md) {
+      display: inline-block;
+      margin-top: 15px;
+    }
+    transition: all .4s;
+    box-sizing: border-box;
+    position: relative;
+    width: 40px;
+    height: 32px;
+    z-index: 3;
+    span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $font-color_default;
+      border-radius: 4px;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        top: 14px;
+      }
+      &:nth-of-type(3) {
+        top: 30px;
+      }
+    }
+    
+    &.active span:nth-of-type(1) {
+      transform: translateY(15px) rotate(-45deg); }
+    &.active span:nth-of-type(2) {
+      opacity: 0; }
+    &.active span:nth-of-type(3) {
+      transform: translateY(-15px) rotate(45deg); }
+}

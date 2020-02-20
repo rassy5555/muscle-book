@@ -1,0 +1,14 @@
+.c-button {
+    display: block;
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: $main-color;
+    color: $font-color_default;
+    @include mq($breakpoint: md){
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,10 @@
+.p-button__wrapper {
+    display: flex;
+}
+
+.p-button__form {
+    margin-top: 40px;
+    @include mq($breakpoint: md){
+        margin-top: 20px;
+    }
+}

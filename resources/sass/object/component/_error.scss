@@ -1,0 +1,8 @@
+.c-error {
+    font-size: 16px;
+    color: red;
+    margin-top: 5px;
+    @include mq($breakpoint: md){
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,55 @@
+.p-prof__wrapper {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.p-prof__wrapper-right {
+    margin-left: 120px;
+    @include mq($breakpoint: md){
+        margin-left: 20px;
+    }
+}
+
+.p-prof__follow-wrapper {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include mq($breakpoint: md){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .p-prof__follows {
+        width: 300px;
+        font-size: 24px;
+        @include mq($breakpoint: md){
+            width: 90px;
+            font-size: 16px;            }
+    }
+}
+
+.p-prof__postDetail-wrapper {
+    margin-bottom: 20px;
+    @include mq($breakpoint: md){
+        font-size: 16px;
+    }
+}
+
+.p-prof__user-wrapper {
+    display: flex;
+    line-height: 50px;
+    @include mq($breakpoint: md){
+        line-height: 30px;
+    }
+}
+
+.p-prof__comment {
+    font-size: 24px;
+    margin-top: 20px;
+    @include mq($breakpoint: md){
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}

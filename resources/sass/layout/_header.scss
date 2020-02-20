@@ -1,0 +1,16 @@
+.l-header {
+    height: 90px;
+    @include mq($breakpoint: md){
+        height: 60px;
+    }
+    
+    .l-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 980px;
+        margin: 0 auto;
+        @include mq($breakpoint: md){
+            width: 90%;
+        }
+    }
+}

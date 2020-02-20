@@ -1,0 +1,11 @@
+{
+    "Register": "新規登録",
+    "Login": "ログイン",
+    "Logout": "ログアウト",
+    "Edit": "編集する",
+    "name": "名前",
+    "email": "Eメール",
+    "sex": "性別",
+    "password": "パスワード",
+    "password_confirmation": "パスワード(再入力)"
+}

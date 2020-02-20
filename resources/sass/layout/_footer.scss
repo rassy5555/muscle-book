@@ -1,0 +1,12 @@
+.l-footer {
+    display: none;
+    @include mq($breakpoint: md){
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+    }
+    .p-footer__item {
+        line-height: 60px;
+        font-size: 20px;
+    }
+}

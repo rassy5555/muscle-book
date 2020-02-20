@@ -1,0 +1,10 @@
+.c-profImage {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    @include mq($breakpoint: md){
+        width: 75px;
+        height: 75px;
+    }
+}

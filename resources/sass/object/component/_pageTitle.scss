@@ -1,0 +1,12 @@
+.c-pageTitle {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include mq($breakpoint: md){
+        font-size: 32px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

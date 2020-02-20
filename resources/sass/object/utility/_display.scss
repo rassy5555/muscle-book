@@ -1,0 +1,5 @@
+.u-dn__sp {
+    @include mq($breakpoint: md){
+        display: none;
+    }
+}

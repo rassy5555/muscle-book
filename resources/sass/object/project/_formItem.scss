@@ -1,0 +1,16 @@
+.p-formItem__comment {
+    height: 200px;
+    width: 100%;
+    @include mq($breakpoint: md){
+        height: 100px;
+    }
+}
+
+.p-formItem__radio {
+    display: inline-block;
+    width: 30px;
+    margin-left: 80px;
+    &:nth-of-type(1) {
+        margin-left: 0;
+    }
+}

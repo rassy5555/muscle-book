@@ -1,0 +1,9 @@
+.c-formItem {
+    width:360px;
+    background-color: $main-color;
+    color: $font-color_default;
+    border-radius: 5px;
+    @include mq($breakpoint: md){
+        width: 100%;
+    }
+}

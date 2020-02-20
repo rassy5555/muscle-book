@@ -1,0 +1,13 @@
+.p-profImage__small {
+    width: 50px;
+    height: 50px;
+    @include mq($breakpoint: md){
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.p-profImage__edit {
+    display: block;
+    margin: 0 auto;
+}

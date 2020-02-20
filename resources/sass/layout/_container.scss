@@ -1,0 +1,8 @@
+.l-container {
+    width: 980px;
+    margin: 0 auto;
+
+    @include mq($breakpoint: md){
+        width: 90%;
+    }
+}

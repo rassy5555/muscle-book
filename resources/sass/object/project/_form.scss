@@ -1,0 +1,17 @@
+.p-form {
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @include mq($breakpoint: md){
+        width: 80%;
+    }
+}
+
+.p-form__comment {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @include mq($breakpoint: md){
+        width: 70%;
+    }
+}

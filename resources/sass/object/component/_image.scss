@@ -1,0 +1,9 @@
+.c-image {
+    width: 30%;
+    padding-top: 30%;
+    margin-bottom: 30px;
+    border: 1px solid #ffffff;
+    @include mq($breakpoint: md){
+        margin-bottom: 20px;
+    }
+}

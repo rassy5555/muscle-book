@@ -1,0 +1,10 @@
+.p-userName__user-wrapper {
+    width: 130px;
+    font-size: 20px;
+    margin-left: 20px;
+    @include mq($breakpoint: md){
+        width: 90px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
